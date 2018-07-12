@@ -2,11 +2,12 @@
   "name": "unifysell/fake-data-amazon",
   "description": "Generates fake data for Amazon MWS related services",
   "homepage": "https://github.com/unifysell/fake-data-amazon",
-  "version": "1.0.0",
   "license": "MIT",
   "authors": [
     {
-      "name": "Nepomuk Fraedrich"
+      "name": "Nepomuk Fraedrich",
+      "email": "info@unifysell.de",
+      "homepage": "https://unifysell.de"
     }
   ],
   "require": {

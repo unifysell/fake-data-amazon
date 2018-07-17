@@ -7,8 +7,13 @@ namespace FakeDataAmazon;
  */
 class Properties extends \Faker\Provider\Base
 {
-    public static function orderId()
+    public static function amazonOrderId()
     {
-        return \random_int(100, 999) . '-' . \random_int(1000000, 9999999) . '-' . \random_int(1000000, 9999999);
+        $lowProbability = parent::numberBetween(0, 100);
+        $pattern = '###-#######-#######';
+        if ($lowProbability > 80) {
+            $pattern = 'S##-#######-#######';
+        }
+        return parent::numerify($pattern);
     }
 }
